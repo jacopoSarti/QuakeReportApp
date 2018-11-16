@@ -8,12 +8,12 @@ public class Earthquake {
 
     private Double mMagnitude;
     private String mLocation;
-    private Long mDate;
+    private Date mDate;
 
-    public Earthquake(Double magnitude, String location, Long date) {
+    public Earthquake(Double magnitude, String location, long time) {
         mMagnitude = magnitude;
         mLocation = location;
-        mDate = date;
+        mDate = new Date(time);
     }
 
     public Double getmMagnitude() {
@@ -24,7 +24,7 @@ public class Earthquake {
         return mLocation;
     }
 
-    public Long getmDate() {
+    public Date getmDate() {
         return mDate;
     }
 }
