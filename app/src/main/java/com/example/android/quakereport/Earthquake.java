@@ -1,14 +1,16 @@
 package com.example.android.quakereport;
 
+import android.text.method.DateTimeKeyListener;
+
 import java.util.Date;
 
 public class Earthquake {
 
     private Double mMagnitude;
     private String mLocation;
-    private Date mDate;
+    private String mDate;
 
-    public Earthquake(Double magnitude, String location, Date date) {
+    public Earthquake(Double magnitude, String location, String date) {
         mMagnitude = magnitude;
         mLocation = location;
         mDate = date;
@@ -22,7 +24,7 @@ public class Earthquake {
         return mLocation;
     }
 
-    public Date getmDate() {
+    public String getmDate() {
         return mDate;
     }
 }
