@@ -47,7 +47,7 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
             locationOffset = parts[0] + LOCATION_SEPARATOR;
             primaryLocation = parts[1];
         } else {
-            locationOffset = getContext().getString(R.string.near_the);
+            locationOffset = getContext().getString(R.string.near);
             primaryLocation = originalLocation;
         }
 
