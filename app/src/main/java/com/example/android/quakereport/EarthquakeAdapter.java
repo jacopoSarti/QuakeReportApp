@@ -77,7 +77,7 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
 
         // format the date and display it in textview
         TextView dateTextView = (TextView) earthquakeView.findViewById(R.id.date);
-        dateTextView.setText(formatDate(currentEarthquake.getmDate(), "MMM DD, yyyy"));
+        dateTextView.setText(formatDate(currentEarthquake.getmDate(), "MMM dd, yyyy"));
 
         // format time of the day and display it in textview
         TextView timeTextView = (TextView) earthquakeView.findViewById(R.id.time);
@@ -90,7 +90,7 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
         // Create a DateFormatter object for displaying date in specified format.
         SimpleDateFormat formatter = new SimpleDateFormat(dateFormat);
 
-        return formatter.format(date.getDate());
+        return formatter.format(date);
     }
 
     public static String formatTime(Date date, String dateFormat) {
